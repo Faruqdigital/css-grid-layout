@@ -9,7 +9,7 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-a{
+a {
     color: #3C7D36;
 }
 
@@ -18,21 +18,32 @@ a{
 }
 
 /* navigation */
-
-nav{
-    background-color: aqua;
+.navbar{
+    margin-top: 1rem;
+    margin-right: 9rem;
 }
-ul{
+
+ul {
     display: grid;
-    grid-template-columns: 1fr repeat(3, 100px);
+    grid-template-columns: 1fr repeat(4, 100px);
+    list-style: none;
 }
 
-ul li .home{
-    margin-right: 51rem;
+ul li a{
+    color: #3A3A3A;
+    text-decoration: none;
+}
+
+ul li .logo {
+    margin-right: 20rem;
+}
+
+.logo span{
+    color: #3C7D36;
 }
 
 /* header */
-header{
+header {
     margin-top: 2rem;
 }
 
@@ -129,6 +140,20 @@ h2 {
 /* media querry */
 
 @media (max-width: 768px) {
+    ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        list-style: none;
+    }
+
+    ul{
+        margin-left: 10rem;
+    }
+
+    ul li .logo {
+        margin-right: -1rem;
+    }
+
     .hero {
         height: 270px;
         background-color: #3C7D36;
